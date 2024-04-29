@@ -2,26 +2,8 @@
    <html lang="en">
    <head>
        <meta charset="UTF-8">
-       <title>VMess配置链接</title>
-       <style>
-           body {text-align: center; padding-top: 50px;}
-           #copyButton {margin-top: 20px; font-size: 18px;}
-       </style>
    </head>
    <body>
-       <h1>您的VMess配置链接</h1>
        <pre id="configLink" style="word-wrap: break-word;">vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICJsYWlrYS0yLjJ8U3Bpdi5sb3ZlQHhyYXkuY29tIiwKICAiYWRkIjogIjE1NC4yMDEuOTIuMTY5IiwKICAicG9ydCI6IDQ0NzIzLAogICJpZCI6ICJlYTI1ZTkzYS05OGZiLTRkY2YtODdjYy02YTA0YTk3OWY4NzMiLAogICJhaWQiOiAwLAogICJuZXQiOiAid3MiLAogICJ0eXBlIjogIm5vbmUiLAogICJob3N0IjogIiIsCiAgInBhdGgiOiAiL2VhMjVlOTNhLTk4ZmItNGRjZi04N2NjLTZhMDRhOTc5Zjg3MyIsCiAgInRscyI6ICJub25lIgp9</pre>
-       <button id="copyButton">点击复制链接</button>
-
-       <script>
-           document.getElementById('copyButton').addEventListener('click', function() {
-               var textToCopy = document.getElementById('configLink').innerText;
-               navigator.clipboard.writeText(textToCopy).then(function() {
-                   alert("链接已复制到剪贴板！");
-               }, function(error) {
-                   console.error("无法复制文本: ", error);
-               });
-           });
-       </script>
    </body>
    </html>
